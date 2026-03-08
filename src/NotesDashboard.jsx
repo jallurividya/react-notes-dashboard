@@ -32,7 +32,7 @@ const NotesDashboard = () => {
             <ul className='notesList'>
                 {notes.map((note) => (
                     <li key={note.id} onClick={() => setSelectedNote(note.id)}
-                        style={{ background: selectedNote === note.id ? "green" : "red", cursor: "pointer" }}
+                        style={{ background: selectedNote === note.id ? "green" : "white", cursor: "pointer" }}
                     >
                         {note.text}
                     </li>
